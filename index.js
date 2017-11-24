@@ -16,14 +16,14 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Route handler for generating test data
 app.get('/init', (req, res) => {
   db.event.insert({ 
-    text:"My test event B", 
-    start_date: new Date(2013,8,2),
-    end_date:   new Date(2013,8,6)
+    text:"Lean's test event", 
+    start_date: new Date(2013,8,16),
+    end_date:   new Date(2013,8,18)
   });
   db.event.insert({ 
-    text:"Another test event", 
-    start_date: new Date(2013,8,4),
-    end_date:   new Date(2013,8,9),
+    text:"Another one of Lean's test event", 
+    start_date: new Date(2013,8,20),
+    end_date:   new Date(2013,8,22),
     color: "#CC8616"
   });
 
